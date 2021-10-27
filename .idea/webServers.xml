@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fd2e10fe-ccae-4f07-a06c-4033d88734c3" name="MiroTaxi" url="https://s-taxi.sk">
+        <fileTransfer rootFolder="/s-taxi.sk/web" accessType="SFTP" host="37.9.175.131" port="22" sshConfigId="1379e1a3-d42c-41a2-b186-c1815824bbc7" sshConfig="admin.s-taxi.sk@37.9.175.131:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

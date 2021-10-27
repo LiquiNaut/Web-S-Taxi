@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://use.fontawesome.com/9b45ce9be5.js" crossorigin="anonymous" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"
+            async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"
+            async></script>
+
+    <script src="script.js" async></script>
+
+    <title>S-Taxi</title>
+</head>
+<body id="home">
+<!--HEADER-->
+<div class="header-background">
+    <div id="nav" class="sticky-nav">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand">S-Taxi</a><!--logo-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home">Domov</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ceny">Ceny</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sluzby">Služby</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Prepravný
+                                poriadok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakty">Kontakty</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="domov">
+        <a class="tele" href="tel:0905 300 230">0905 300 230</a>
+    </div>
+</div>
+
+
+<div class="container-fluid" id="ceny">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-6 text-left text-center">
+            <h1 class="section-title">Ceny</h1>
+            <div class="ceny text-center">
+                <span> <b>0,75€/km</b> </span><br>
+                <span> min. jazdné <b>1,50€</b> </span><br>
+                <span> stojné <b>0,17€</b> za minútu </span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6 image-right"></div>
+    </div>
+</div>
+
+<div class="container-fluid" id="sluzby">
+    <div class="row">
+        <div class="col-md-4 image-left"></div>
+        <div class="col-md-4 text-right">
+            <div class="sluzby text-center">
+                <h1 class="section-title">Služby</h1>
+                <ul>
+                    <li><i class="fa fa-plane" aria-hidden="true"></i>
+                        <b>Letiská</b>
+                        <ul>Bratislava 70€</ul>
+                        <ul>Swechat 90€</ul>
+                        <ul>Budapešť 100€</ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 text-right-right">
+            <div class="sluzby text-center">
+                <ul>
+                    <li><i class="bi bi-building"></i><b>Mestá</b>
+                        <ul>Topoľčany 15€</ul>
+                        <ul>Nitra 33€</ul>
+                        <ul>Bánovce n/B 13€</ul>
+                        <ul>Trenčín 33€</ul>
+                        <ul>Prievidza 23€</ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="fluid container contact-us" id="kontakty">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-md-6">
+            <table class="table table-borderless text-center">
+                <tr>
+                    <th style="color: #b1b4bd; font-size: 3.2rem;font-weight: 500; padding: 2rem 5rem 2rem;">Kontakty
+                    </th>
+                </tr>
+                <tr>
+                    <td style="font-size: 1.5rem; line-height: 1.4;"><i class="bi bi-phone"
+                                                                        style="color: #b1b4bd"></i><a
+                            href="tel:0905 300 230" class="text-decoration-none">0905 300 230</a></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 1.5rem; line-height: 1.4;"><i class="bi bi-phone"
+                                                                        style="color: #b1b4bd"></i><a
+                            href="tel:0911 300 230" class="text-decoration-none">0911 300 230</a></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 1.5rem; line-height: 1.4;"><i class="bi bi-phone"
+                                                                        style="color: #b1b4bd"></i><a
+                            href="tel:0948 300 230" class="text-decoration-none">0948 300 230</a></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 1.5rem; line-height: 1.4;"><i class="bi bi-facebook"
+                                                                        style="color: #b1b4bd"></i><a
+                            href="https://www.facebook.com/staxi.staxi.9" class="text-decoration-none">Facebook</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+
+<!--MODAL-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header d-block">
+                <h4 class="modal-title text-center" id="staticBackdropLabel">Prepravný poriadok</h4>
+            </div>
+            <!--CONTENT-->
+            <div class="modal-body" onmousedown='return false;'>
+                <div class="text-center">
+                    <b>Miroslav Gašparovič S-taxi, Nádražná 647/17, 958 01 Partizánske</b><br>
+                    vydáva podľa § 26 a §4 56/2012 Z.z., Zákon o cestnej doprave a podľa 124/2012 Z.z.,
+                    Vyhláška Ministerstva dopravy, výstavby a regionálneho rozvoja Slovenskej republiky,
+                    ktorou sa vykonáva zákon č. 56/2012 Z.z. o cestnej doprave<br></div>
+                <br>
+                <div class="text-center">
+                    <b>Prepravný poriadok taxislužby</b><br>
+                    <br>
+                    <b>Čl. l</b><br>
+                    <b>Úvodné ustanovenia</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Prepravný poriadok upravuje podmienky vykonávania taxislužby fyzickými osobami alebo právnickými
+                        osobami a podmienky na uzavretie zmluvy o preprave osôb v taxislužbe.
+                    </li>
+                    <li>Obsah prepravného poriadku je voči cestujúcim a objednávateľom odo dňa jeho zverejnenia súčasťou
+                        návrhu na uzavretie zmluvy o preprave osôb v taxislužbe.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 2</b><br>
+                    <b>Taxislužba</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Taxislužba sa vykonáva na uspokojenie prepravných potrieb osôb, ako nepravidelná individuálna
+                        preprava cestujúcich, ktorých dopravca prepravuje do dohodnutej cieľovej zastávky podľa
+                        prepravnej zmluvy,
+                        uzavretej s taxi službou alebo priamo s vodičom bezprostredne pred začatím prepravy za stanovené
+                        cestovné.
+                    </li>
+                    <li>Taxislužba je prevádzkovanie osobnej dopravy vozidlami taxislužby, ako prepravy jednotlivých
+                        cestujúcich,
+                        alebo skupiny cestujúcich do cieľového miesta podľa zmluvy o preprave osôb v zmysel Zákon č.
+                        56/2012 Z.z. o cestnej doprave.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 3</b><br>
+                    <b>Dopravca</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>V taxislužbe je oprávnená podnikať právnická osoba alebo fyzická osoba (ďalej len "dopravca"),
+                        ktorá je držiteľom oprávnenia na výkon taxislužby a spĺňa podmienky osvedčenia o odbornej
+                        spôsobilosti a
+                        podmienok prepravného poriadku i vzhľadom k 124/2012 Z.z., Vyhláška Ministerstva dopravy,
+                        výstavby a
+                        regionálneho rozvoja Slovenskej republiky, ktorou sa vykonáva zákon č. 56/2012 Z.z. o cestnej
+                        doprave.
+                    </li>
+                    <li>Dopravca má prevádzkovú povinnosť v rozsahu koncesie, prepravnú povinnosť v
+                        rozsahu prepravného poriadku a tarifnú povinnosť podľa tarify v zmysle zákona č.
+                        56/2012 Z.z., Zákon o cestnej doprave.
+                    </li>
+                    <li>Dopravca môže ponúkať poskytovanie dopravných služieb zverejnením základných
+                        podmienok ich poskytovania na stanovišti taxislužby, na svojom webovom sídle, na
+                        vozidlách taxislužby, formou reklamy alebo zriadením dispečingu a propagáciou
+                        objednávkovej služby v zmysle zákona č. 56/2012 Z.z., Zákon o cestnej doprave.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 4</b><br>
+                    <b>Všeobecné povinnosti dopravcu</b><br></div>
+                <br>
+                <ul style="list-style-type:none;">
+                    <li>Dopravca v taxislužbe je povinný:<br>
+                        <ol type="1">
+                            <li>označiť každé vozidlo taxislužby obchodným
+                                menom dopravcu,
+                            </li>
+                            <li>označiť každé vozidlo taxislužby obchodným menom dopravcu a nápisom TAXI (na streche
+                                transparentom) a na obidvoch predných dverách aj telefónnym číslom objednávkovej služby.
+                                Súčasťou označenia musí byť logo dopravcu. Označenie môže byť realizované nezmazateľným
+                                písmom
+                                znalecky na karosériu vozidla alebo použitím samolepiacej nálepky, prípadne mechanicky
+                                pripevnenou tabuľkou,
+                            </li>
+                            <li>zabezpečiť, aby v každom vozidle taxislužby bol zabudovaný funkčný taxameter schváleného
+                                typu a viditeľne umiestnené základné sadzby cestovného v karosérii vozidla,
+                            </li>
+                            <li>zabezpečiť, aby v každom vozidle taxislužby bol doklad o oprávnení podnikať, prepravný
+                                poriadok a doklady oprávňujúce použiť vozidlo k výkonu taxislužby.
+                            </li>
+                            <li>zariadenie, ktoré je schváleného typu pre vyhotovovanie daňových dokladov v rámci výkonu
+                                taxislužby a vydáva daňovo preukázateľné doklady cestujúcim.
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <b>Čl. 5</b><br>
+                    <b>Osobitné povinnosti dopravcu</b><br></div>
+                <br>
+                <ul style="list-style-type:none;">
+                    <li>Dopravca je povinný:
+                        <ol type="1">
+                            <li>zabezpečiť zverejnenie a sprístupnenie prepravného poriadku,</li>
+                            <li>prepravovať cestujúcich podľa platného cenníka taxislužby a na požiadanie vydať
+                                cestujúcemu
+                                potvrdenku o vykonanej preprave a zaplatení cestovného,
+                            </li>
+                            <li>starať sa o bezpečnosť, pohodlie a pokojnú prepravu cestujúcich a o ich prepravu
+                                batožín,
+                            </li>
+                            <li>ak sú splnené podmienky tohto prepravného poriadku a nebránia tomu príčiny, ktoré
+                                nemožno odvrátiť,
+                                je dopravca povinný prepravy vykonať (ďalej len "prepravná povinnosť"),
+                            </li>
+                            <li>výkonom taxislužby poveriť len oprávnenú osobu, ktorá má:
+                                <ol type="a">
+                                    <li>oprávnenie na vedenie osobného motorového vozidla,</li>
+                                    <li>platnú koncesnú listinu k výkonu osobnej taxislužby,</li>
+                                    <li>absolvoval povinnú lekársku prehliadku vodičov z povolania a pravidelné školenie
+                                        v zmysle
+                                        zákona NR SR č. 8/2009 Z. z.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>zabezpečiť, aby vodič mal vo vozidle taxislužby tieto doklady:
+                                <ol type="a">
+                                    <li>osvedčenie o technickom preukaze vozidla alebo osvedčenie o evidencii<br>
+                                        vozidla,
+                                    </li>
+                                    <li>doklad o zaplatení posledného splatného zákonného poistného,</li>
+                                    <li>doklad o zaplatení cestnej dane,</li>
+                                    <li>overenú kópiu koncesnej listiny,</li>
+                                    <li>daňové doklady o zaplatení cestovného,</li>
+                                    <li>doklad o zaplatení miestneho poplatku za stanovište, ak vozidlo stojí na
+                                        stanovišti TAXI
+                                    </li>
+                                    <li>doklad o ciachovaní a nastavení taxametra v zákonom stanovených lehotách,</li>
+                                    <li>protokol o vykonanej technickej prehliadke vozidla,</li>
+                                    <li>vierohodné poverenie prevádzkovateľa, osobe vykonávajúcej taxislužbu príslušným
+                                        vozidlom taxislužby na výkon taxislužby,
+                                    </li>
+                                    <li>preukaz totožnosti.</li>
+                                </ol>
+                            </li>
+                            <li>poučiť vodiča v zmysle §4 ods. 1 až 5 zákona č. 315/1996 Z. z., Zákon Národnej rady
+                                Slovenskej
+                                republiky o premávke na pozemných komunikáciách
+                            </li>
+                            <li>oboznámiť cestujúceho o povinnosti dodržiavať §5 ods.3 zákona č. 315/1996 Z. z., Zákon
+                                Národnej
+                                rady Slovenskej republiky o premávke na pozemných komunikáciách
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <b>Čl. 6</b><br>
+                    <b>Vozidlo taxislužby</b><br></div>
+                <br>
+                <ul style="list-style-type:none;">
+                    <li>Na výkon osobnej taxislužby možno použiť iba uzavreté osobné motorové vozidlo, ktoré:
+                        <ol type="1">
+                            <li>je podľa výsledkov technickej prehliadky a emisnej kontroly spôsobilé na prevádzku v
+                                premávke na pozemných komunikáciách,
+                            </li>
+                            <li>má najmenej štvoro dverí do priestoru pre vodiča a cestujúcich,</li>
+                            <li>je najmenej štvormiestne a najviac deväťmiestne vrátane miesta pre vodiča,</li>
+                            <li>je na predných ľavých a pravých dverách označené obchodným menom dopravcu nápisom TAXI a
+                                telefónnym číslom objednávkovej taxislužby,
+                            </li>
+                            <li>je vybavené funkčným strešným svietidlom žltej farby s nápisom TAXI</li>
+                            <li>je vybavené zabudovaným úradne overeným taxametrom schváleného typu a neporušenou
+                                plombou,
+                            </li>
+                            <li>na viditeľnom mieste má uvedené základné sadzby cestovného,</li>
+                            <li>je vybavené príručným hasiacim prístrojom a ťažným lanom podľa osobitných predpisov,
+                            </li>
+                            <li>je vybavené povinnou výbavou.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <b>Čl. 7</b><br>
+                    <b>Stanovište taxislužby</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Stanovište vozidla taxislužby (ďalej len "stanovište") je jedno, alebo viac vyhradených
+                        parkovacích miest určených obcou na ponúkanie prepravy cestujúcim vozidlami taxislužby.
+                    </li>
+                    <li>Stanovište je označené:
+                        <ol type="a">
+                            <li>vodorovným dopravným značením vymedzujúcim priestor pre stojace vozidlá taxislužby
+                                pripravené na prepravu,
+                            </li>
+                            <li>zvislou informatívnou dopravnou značkou s nápisom TAXI a doplnkovou značkou o počte
+                                parkovacích miest vyhradených pre jednotlivých dopravcov taxislužby.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Na stanovišti môže stáť iba toľko vozidiel taxislužby, pre koľko je na ňom vyznačených miest pre
+                        jednotlivých dopravcov.
+                    </li>
+                    <li>Na stanovišti môžu stáť iba vozidlá taxislužby, ktoré sú bezprostredne pripravené na prepravu
+                        cestujúcich.
+                    </li>
+                    <li>Dopravca má prepravnú a prevádzkovú povinnosť každým vozidlom taxislužby, ktoré stojí na
+                        stanovišti,
+                        pričom vodič je povinný zdržovať sa vo vozidle, alebo v jeho bezprostrednej blízkosti a byť
+                        pripravený poskytnúť taxislužbu.
+                    </li>
+                    <li>Pri usporiadaní verejných zhromaždení a iných verejných akcií, môže vozidlo osobnej taxislužby v
+                        súlade s podmienkami určenými na ochranu verejného poriadku pri ich konaní a v súlade s
+                        pravidlami
+                        cestnej premávky, stáť aj mimo vyznačených stanovíšť.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 8</b><br>
+                    <b>Výkon taxislužby</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Dopravca môže ponúkať prepravu cestujúcich na určenom stanovišti, alebo objednávkovou službou,
+                        pričom zmluvu o preprave osôb môže vodič uzavrieť s cestujúcim kdekoľvek. Prednostne môže
+                        dopravca,
+                        alebo vodič uzavrieť zmluvu o preprave s cestujúcim, alebo objednávateľmi, ktorí si službu taxi
+                        objednávajú cez dispečing taxislužby vopred, jednorazovo alebo opakovane.
+                    </li>
+                    <li>Dopravca má prepravnú a prevádzkovú povinnosť, ak sú splnené podmienky prepravného poriadku.
+                    </li>
+                    <li>Vozidlo taxislužby pripravené na prepravu (na stanovišti alebo mimo neho), má rozsvietené
+                        strešné
+                        svietidlo. Od uzavretia zmluvy o preprave s cestujúcim do ukončenia prepravy je strešné
+                        svietidlo
+                        vypnuté. Vozidlo taxislužby, ktoré nevykonáva taxislužbu, má strešné svietidlo zakryté
+                        neprehľadnou
+                        prikrývkou, alebo odmontované.
+                    </li>
+                    <li>Taxameter vozidla taxislužby je umiestnený tak, aby umožňoval cestujúcim počas prepravy poznať
+                        merané údaje o čase prepravy a cestovnom, pričom taxameter je zapnutý od začatia prepravy až do
+                        jej skončenia.
+                    </li>
+                    <li>Vodič taxislužby počas výkonu prijíma objednávku z dispečingu taxislužby a zabezpečuje ich
+                        riadne
+                        a včasné vybavenie.
+                    </li>
+                    <li>Vodič taxislužby počas výkonu prijíma objednávky a priamo uzatvára zmluvu o preprave s
+                        cestujúcim.
+                    </li>
+                    <li>Prepravná povinnosť vodiča taxislužby je podľa poradia z jednotlivých stanovíšť TAXI. Ak je na
+                        stanovišti viac vozidiel taxislužby pripravených na prepravu a objednávka nie je zadávaná z
+                        dispečingu
+                        taxislužby, cestujúci si môže vybrať (mimo poriadia) ktoréhokoľvek z nich.
+                    </li>
+                    <li>Preprava sa uskutočňuje po najkratšej trase s prihliadnutím na dopravnú situáciu. Po inej trase
+                        sa preprava môže uskutočniť iba so súhlasom, alebo na návrh cestujúceho. Po uzavretí zmluvy o
+                        preprave s cestujúcim, možno na prepravu po rovnakej trase vziať ďalšieho cestujúceho iba so
+                        súhlasom, alebo na návrh cestujúceho, s ktorým bola uzavretá zmluva o preprave.
+                    </li>
+                    <li>Počas prepravy vodič a cestujúci nesmú v osobnom aute taxislužby fajčiť, piť, jesť a kŕmiť
+                        prepravované zvieratá. Na prednom sedadle manipulovať s príručnou batožinou, novinami, mapami,
+                        alebo inými predmetmi, ktoré by mohli obmedziť výhľad vodiča, alebo vedenie auta taxislužby.
+                    </li>
+                    <li>V priestore pre cestujúcich možno prepravovať aj príručnú batožinu cestujúceho.</li>
+                    <li>Cestovnú batožinu, invalidné vozíky, barly, palice, kočíky, klietky pre operencov, balíky, lyže,
+                        sane a iné veci, ktoré by mohli byť pri dopravnej nehode, alebo prudkom pohybe osobného auta pre
+                        vodiča, alebo pre cestujúceho nebezpečné, možno prepravovať iba v priestore pre batožinu,
+                        prípadne
+                        na strešnom nosiči. Batožinu a iné veci nakladá a vykladá, umiestňuje alebo pripevňuje vodič
+                        taxislužby.
+                    </li>
+                    <li>Do osobného auta taxislužby možno vziať iba taký počet cestujúcich, aký je počet miest podľa
+                        technického
+                        preukazu. Podľa §46 zákona č. 8/2009 Z.z. o cestnej premávke a o zmene a doplnení niektorých
+                        zákonov
+                        v motorovom vozidle alebo jeho prípojnom vozidle, ktoré je určené na prepravu osôb, smú sa na
+                        miestach
+                        na to vyhradených prepravovať osoby len do prípustnej užitočnej hmotnosti vozidla, pritom počet
+                        prepravovaných osôb nesmie byť vyšší, ako je počet miest uvedených v osvedčení o evidencii časť
+                        I a časť II alebo v technickom osvedčení vozidla.
+                    </li>
+                    <li>Na prednom sedadle vedľa vodiča možno prepravovať iba cestujúceho, ktorého umožňujú prepravovať
+                        predpisy o bezpečnosti a plynulosti cestnej premávky. Na prednom sedadle vedľa vodiča sa nesmie
+                        prepravovať osoba mladšia ako 12 rokov a osoba s telesnou výškou menšou ako 150 cm. Vodič
+                        motorového
+                        vozidla, ktorý prepravuje v motorovom vozidle na mieste vybavenom bezpečnostným pásom osobu
+                        mladšiu
+                        ako 12 rokov a s telesnou výškou menšou ako 150 cm, by mal povinne počas jazdy, takúto osobu
+                        prepravovať
+                        v schválenom zadržiavacom zariadení pre deti, ktoré musí spĺňať podmienky ustanovené v predpise
+                        EHK číslo 44.
+                    </li>
+                    <li>O vykonanej preprave je vodič taxislužby povinný na požiadanie vydať cestujúcemu potvrdenie,
+                        ktoré obsahuje najmä:
+                        <ol type="a">
+                            <li>číslo dokladu,</li>
+                            <li>evidenčné číslo vozidla,</li>
+                            <li>dátum jazdy,</li>
+                            <li>štátnu poznávaciu značku vozidla,</li>
+                            <li>východiskové a cieľové miesto prepravy,</li>
+                            <li>zaplatené cestovné,</li>
+                            <li>podpis vodiča taxislužby, ktorý prepravu vykonal.</li>
+                        </ol>
+                    </li>
+                    <li>V zmysle zákona č. 8/2009 Z.z. o cestnej premávke a o zmene a doplnení niektorých zákonov podľa
+                        §45 vodič nesmie dovoliť, aby sa prekročil povolený počet prepravovaných osôb, a podľa svojich
+                        možností nesmie pripustiť ani porušenie povinností ustanovených týmto osobám. Každá prepravovaná
+                        osoba zodpovedá za dodržiavanie svojich povinností podľa tohto zákona. Za prepravu detí alebo
+                        osôb,
+                        ktoré pre poruchu zdravia nezodpovedajú za svoje konanie, zodpovedá osoba, ktorá ich sprevádza.
+                        Ak také osoby nemajú sprievod, za ich prepravu zodpovedá vodič alebo ním poverená spôsobilá a
+                        náležite poučená osoba; to neplatí, ak ide o pravidelnú verejnú dopravu osôb.
+                    </li>
+                    <li>V zmysle zákona č. 8/2009 Z.z. o cestnej premávke a o zmene a doplnení niektorých zákonov podľa
+                        §45 prepravované osoby nesmú svojím správaním ohrozovať bezpečnosť cestnej premávky najmä
+                        obmedzovaním
+                        vodiča v bezpečnom ovládaní vozidla, zotrvaním na miestach, kde by boli ohrozené, a vyhadzovaním
+                        predmetov z vozidla.
+                    </li>
+                    <li>Vodič motorového vozidla a zvláštneho motorového vozidla po novelizácii zákona č. 315/196 Z.z.
+                        bude povinní nosiť mimo obce výstražnú vestu, keď sa na vozovke zdržiava mimo vozidla. V súlade
+                        s odporúčaním Komisie 2004/345/ES o uplatňovaní opatrení bezpečnosti v cestnej doprave povinnosť
+                        vodiča nosiť ochrannú vestu, ktorá bude spĺňať požiadavky uvedené STN EN 471 výstražné odevy s
+                        vysokou viditeľnosťou na profesionálne použitie, ak sa nezdržiava vo vozidle, najmä za zníženej
+                        viditeľnosti, zníži dopravnú nehodovosť pri premávke na pozemných komunikáciách.
+                    </li>
+                    <li>V súlade s ustanovením § 23 ods. 3 zákona č. 315/1996 Z. z. o premávke na pozemných
+                        komunikáciách
+                        v znení neskorších predpisov (ďalej len „zákon č. 315/1996 Z. z.“), počas núdzového státia ak
+                        také
+                        vozidlo tvorí prekážku cestnej premávky musí byť okrem vozidiel kategórie L, jednonápravových
+                        traktorov s prívesom, motorových vozíkov a vozidiel o celkovej šírke menšej ako 1,00 m označené
+                        na pozemnej komunikácií prenosným výstražným trojuholníkom, schváleným a označeným
+                        homologizačnou
+                        značkou po predpisu EHK č. 27.
+                    </li>
+                    <li>Motorové a prípojné vozidlá v premávke na pozemných komunikáciách by mali byť vybavené
+                        nasledovne:
+                        - motorové vozidlo prostriedkami a pomôckami, s ktorých pomocou možno opraviť bežné poruchy,
+                        ktoré
+                        vznikli na vozidle, - motorové vozidlo kategórie M a N by malo mať túto minimálnu výbavu:
+                        <ol type="a">
+                            <li>náhradné elektrické poistky, ak sa v elektrickej inštalácii používajú, a to po jednej z
+                                každého používaného druhu,
+                            </li>
+                            <li>náhradné žiarovky (výmenného zdroja svetla s výnimkou výbojok), a to po jednej z každého
+                                druhu používaného na vonkajšie osvetlenie vozidla,
+                            </li>
+                            <li>príručný zdvihák s nosnosťou rovnajúcou sa aspoň zaťaženiu najviac zaťaženej nápravy
+                                vozidla alebo rovnajúcou sa hmotnosti zdvíhanej časti z celkovej hmotnosti vozidla pri
+                                zdvíhaní tejto časti spôsobom určeným výrobcom na použitie zdviháka,
+                            </li>
+                            <li>kľúč na matice a skrutky kolies,</li>
+                            <li>náhradné koleso s ráfikom a s pneumatikou a s takým upevnením držiaka, ktoré
+                                zabezpečuje,
+                                že sila pri snímaní kolesa z držiaka alebo pri vkladaní do držiaka nepresiahne 490 N.
+                                Takto
+                                nemusí byť vybavené vozidlo, ktoré má všetky kolesá vybavené pneumatikami zvláštnej
+                                konštrukcie,
+                                umožňujúcej núdzové dôjdenie po defekte s indikáciou defektu v ktorejkoľvek pneumatike
+                                alebo vozidlo kategórie M1 a N1 s indikáciou defektu v ktorejkoľvek pneumatike, ktoré sú
+                                vybavené prostriedkami pre bezdemontážnu opravu poškodenej pneumatiky umožňujúcej
+                                núdzové
+                                dôjdenie.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Vozidlo musí byť vybavené autokárničkou v zmysle Vyhlášky č. 143/2009 Z.z., Ministerstva
+                        zdravotníctva
+                        Slovenskej republiky, ktorou sa ustanovujú druhy lekárničiek a obsah lekárničiek pre cestnú
+                        dopravu.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 9</b><br>
+                    <b>Odmietnutie prepravy</b><br></div>
+                <br>
+                <ul style="list-style-type:none;">
+                    <li>Vodič vozidla taxislužby pripraveného na prepravu môže odmietnuť vykonať prepravu, ak:
+                        <ol type="1">
+                            <li>trasa dopravnej cesty, alebo jej cieľ navrhovaný cestujúcim, alebo správanie cestujúceho
+                                vzbudzuje obavu vodiča o jeho bezpečnosť, alebo zdravie, alebo má podozrenie, že nemá v
+                                poriadku doklady na prepravu do zahraničia,
+                            </li>
+                            <li>cestujúci je zjavne pod vplyvom alkoholu, alebo inej návykovej látky, hrozí znečistenie,
+                                alebo poškodenie osobného auta taxislužby, alebo obťažovanie vodiča počas prepravy,
+                            </li>
+                            <li>cestujúci sa správa agresívne, alebo je ozbrojený, alebo inak vzbudzuje obavy o
+                                bezpečnosť vodiča,
+                            </li>
+                            <li>cestujúci má batožinu, ktorá svojim počtom, veľkosťou, nebezpečenstvom pre ľudí, nie je
+                                vhodná na prepravu osobným autom, alebo ktorá by mohla poškodiť, alebo znečistiť vozidlo
+                                taxislužby,
+                            </li>
+                            <li>cestujúci hodlá prepravovať zvieratá, ktoré vzhľadom na svoju veľkosť, agresivitu,
+                                počet,
+                                alebo výstroj nie sú vhodné na prepravu osobným autom.
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <b>Čl. 10</b><br>
+                    <b>Nakladanie s nájdenými vecami</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Stratou veci zásadne vlastníctvo k veci nezaniká.</li>
+                    <li>Vodič taxislužby je povinný, ak nájde stratenú vec cestujúceho vo vozidle taxislužby, ju vydať
+                        vlastníkovi. Ak vlastník stratenej veci nie je známy, alebo ak sa neprihlási v deň nálezu, vodič
+                        taxislužby je povinný vec odovzdať na dispečing taxislužby.
+                    </li>
+                    <li>Ak sa prihlási ten, kto vec stratil, alebo zabudol v aute taxislužby a nie sú pochybnosti o
+                        hodnovernosti jeho tvrdenia, vec sa mu vydá na základe potvrdenia. Ak sa vlastník veci do 15 dní
+                        od nálezu neprihlási, dopravca odovzdá vec príslušnému štátnemu orgánu (napr. straty a nálezy)
+                        na
+                        základe potvrdenia o odovzdaní nájdenej veci. Ak sa vlastník neprihlási do jedného roka od
+                        odovzdania,
+                        pripadne vec do vlastníctva štátu.
+                    </li>
+                    <li>Nálezca má právo na náhradu potrebných výdavkov a na nálezné, ktoré tvorí do desať percent ceny
+                        nálezu. Právo na nálezné a náhradu potrebných výdavkov nálezca má voči vlastníkovi a to
+                        pôvodnému,
+                        ak je známy, alebo novému, ak vec nadobudol štát.
+                    </li>
+                    <li>Ak by nálezca nájdenú vec neodovzdal vlastníkovi, resp. príslušnému štátnemu orgánu, išlo by o
+                        bezdôvodné obohatenie sa podľa § 451 a násl. Občianskeho zákonníka.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 11</b><br>
+                    <b>Zmluva o preprave osôb</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Zmluvný vzťah medzi taxislužbou a cestujúcim vzniká na základe uzavretej zmluvy o preprave osôb
+                        podľa § 760 až § 764 Občianskeho zákonníka (ďalej len "prepravná zmluva").
+                    </li>
+                    <li>Prepravná zmluva v taxislužbe sa uzatvára na základe konania cestujúceho, ktorý dáva nepochybne
+                        najavo, že chce uzatvoriť prepravnú zmluvu. Rozhodujúcim okamihom pre uzavretie zmluvného vzťahu
+                        je nastúpenie cestujúceho do vozidla taxislužby s úmyslom využiť prepravu taxislužbou.
+                    </li>
+                    <li>Pred uskutočnením prepravy a uzavretím prepravnej zmluvy, má cestujúci právo oboznámiť sa s
+                        platným cenníkom taxislužby a počas prepravy sledovať taxameter vozidla taxislužby.
+                    </li>
+                    <li>O vykonanej preprave je vodič taxislužby povinný na požiadanie vydať cestujúcemu potvrdenku,
+                        ktorá obsahuje najmä údaje podľa čl. 8 ods. 14 prepravného poriadku.
+                    </li>
+                    <li>Uzavretím prepravnej zmluvy vzniká taxislužbe povinnosť riadne a včas prepraviť cestujúceho do
+                        miesta určenia podľa zmluvných podmienok a podmienok prepravného poriadku.
+                    </li>
+                    <li>Odmietnuť uzavretie prepravnej zmluvy a vykonanie prepravy, môže vodič taxislužby podľa
+                        podmienok
+                        čl. 9 prepravného poriadku.
+                    </li>
+                    <li>Uskutočnením prepravy na základe uzavretej prepravnej zmluvy a podľa podmienok prepravného
+                        poriadku,
+                        vzniká cestujúcemu povinnosť zaplatiť určené cestovné podľa cenníka taxislužby. Nedôvodné
+                        odmietnutie
+                        zaplatenia cestovného, je vymáhateľné súdnou cestou.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 12</b><br>
+                    <b>Odstúpenie od zmluvy</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Dopravca môže od uzatvorenej prepravnej zmluvy odstúpiť, ak nie sú objednávateľom splnené
+                        podmienky
+                        prepravnej zmluvy, alebo ustanovenia prepravného poriadku.
+                    </li>
+                    <li>Vodič taxislužby môže od uzatvorenej prepravnej zmluvy odstúpiť, ak cestujúci počas prepravy
+                        ohrozuje jeho bezpečnosť, znečisťuje interiér vozidla, bezdôvodne mení trasu a cieľ prepravy,
+                        alebo inak vzbudzuje obavy o bezpečnosť vodiča.
+                    </li>
+                    <li>Cestujúci alebo objednávateľ môže od uzatvorenej prepravnej zmluvy odstúpiť, ak dopravca, alebo
+                        vodič taxislužby porušil zmluvné podmienky, alebo podmienky prepravného poriadku.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 13</b><br>
+                    <b>Zodpovednosť</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Za porušenie povinnosti taxislužby prepraviť podľa prepravného poriadku cestujúceho riadne a
+                        včas, zodpovedá dopravca podľa § 763 ods. l a § 763 ods. 2 a §763 ods. 3 Občianskeho zákonníka.
+                    </li>
+                    <li>V prípade, že došlo k neodôvodnenému meškaniu, alebo neuskutočneniu prepravy z viny dopravcu
+                        alebo vodiča taxislužby, je dopravca povinný nahradiť cestujúcemu vzniknutú škodu.
+                    </li>
+                    <li>Náhrada škody za omeškanie môže byť riešená zľavou na zaplatenom cestovnom. Náhrada škody za
+                        neuskutočnenie prepravy môže byť riešená úhradou cestovného podľa cenníka taxislužby. Svojej
+                        zodpovednosti sa dopravca zbaví, ak preukáže, že škode nemohol zabrániť, ani pri vynaložení
+                        všetkého
+                        úsilia, ktoré od neho možno požadovať.
+                    </li>
+                    <li>Za škodu vzniknutú počas prepravy cestujúcemu na zdraví, batožine a osobných veciach zodpovedá
+                        dopravca podľa § 427 až § 431 Občianskeho zákonníka. Za škodu spôsobenú na batožinách
+                        prepravovaných
+                        oddelene od cestujúceho zodpovedá dopravca podľa § 769 ods. l Občianskeho zákonníka. Zbavenie sa
+                        zodpovednosti za veci vnesené podľa § 433 Občianskeho zákonníka je vylúčené.
+                    </li>
+                    <li>Za účelom vysporiadania škôd a nárokov z nich uplatnených, dopravca musí byť povinne podľa § 7
+                        písm. g) podľa zákona č. 56/2012 Z.z., Zákon o cestnej doprave poistený pre prípad zodpovednosti
+                        za škodu spôsobenú prevádzkovaním cestnej dopravy a činnosťou osádok vozidiel cestujúcim,
+                        odosielateľom a príjemcom vecí a tretím osobám.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 14</b><br>
+                    <b>Riešenie škôd</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Škody vzniknuté z prepravy taxislužbou a sťažnosti na výkon vodiča taxislužby, rieši dopravca na
+                        základe písomného oznámenia (podania) cestujúceho.
+                    </li>
+                    <li>V prípade, že nedôjde k dohode v riešení sťažnosti, alebo uplatnenej škody medzi cestujúcim a
+                        dopravcom, môže byť predmetná vec riešená na príslušnom okresnom súde.
+                    </li>
+                    <li>Právo na náhradu škody musí cestujúci uplatniť u dopravcu bez zbytočného odkladu, najneskôr do
+                        pätnásteho dňa po dni, kedy ku škode došlo, alebo do 30 dní, keď sa poškodený o škode dozvedel.
+                    </li>
+                    <li>Právo na náhradu škody sa premlčí podľa § 106 ods. l Občianskeho zákonníka za dva roky odo dňa,
+                        keď sa poškodený dozvie o škode a tom, kto za ňu zodpovedá.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 15</b><br>
+                    <b>Mimoriadna udalosť</b><br></div>
+                <br>
+                <ol type="1">
+                    <li>Za mimoriadnu udalosť počas prepravy taxislužbou sa považuje:
+                        <ol type="a">
+                            <li>dopravná nehoda,</li>
+                            <li>požiar vozidla,</li>
+                            <li>úraz, alebo náhle ochorenie cestujúceho, alebo inej osoby.</li>
+                        </ol>
+                    </li>
+                    <li>Pri mimoriadnej udalosti je vodič taxislužby povinný predovšetkým:
+                        <ol type="a">
+                            <li>bezodkladne zastaviť vozidlo,</li>
+                            <li>urobiť potrebné opatrenia na záchranu cestujúcich a majetku ohrozeného mimoriadnou
+                                udalosťou,
+                            </li>
+                            <li>poskytnúť podľa svojich schopností a možností zranenej osobe potrebnú prvú pomoc a
+                                bezodkladne
+                                privolať odbornú zdravotnícku pomoc,
+                            </li>
+                            <li>urobiť vhodné opatrenia, aby nebola ohrozená bezpečnosť cestnej premávky a umožniť jej
+                                obnovenie.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Ak pri mimoriadnej udalosti došlo k usmrteniu osoby, alebo k jej zraneniu, poškodeniu cesty,
+                        alebo všeobecne prospešného zariadenia, ak unikli nebezpečné veci ( v zmysle 56/2012 Z.z.,
+                        Zákon o cestnej doprave) alebo ak došlo k hmotnej škode (hmotná škoda prevyšuje jedenapolnásobok
+                        väčšej škody podľa Trestného zákona. V zmysle § 125 ods. 1 Trestného zákona sa škodou malou
+                        rozumie škoda prevyšujúca sumu 266 eur. Škodou väčšou sa rozumie suma dosahujúca najmenej
+                        desaťnásobok
+                        takej sumy, čiže 2660 eur. Škoda zrejme prevyšujúca jedenapolnásobku väčšej škody podľa
+                        Trestného
+                        zákona sa rozumie 3990 eur) zrejme prevyšujúcej desaťnásobok minimálnej mesačnej mzdy
+                        zamestnanca,
+                        je vodič taxislužby povinný ako účastník dopravnej nehody:
+                        <ul style="list-style-type:square;">
+                            <li>ohlásiť dopravnú nehodu policajtovi,</li>
+                            <li>poskytnúť podľa svojich schopností a možností zranenej osobe prvú pomoc a bezodkladne
+                                privolať záchrannú zdravotnú službu,
+                            </li>
+                            <li>urobiť potrebné opatrenia na záchranu osoby alebo majetku ohrozeného dopravnou
+                                nehodou,
+                            </li>
+                            <li>zotrvať na mieste dopravnej nehody až do príchodu policajta alebo sa na toto miesto
+                                bezodkladne vrátiť po poskytnutí alebo privolaní pomoci, alebo po ohlásení dopravnej
+                                nehody,
+                            </li>
+                            <li>zdržať sa konania, ktoré by bolo na ujmu vyšetrenia dopravnej nehody, najmä
+                                premiestnenia vozidiel,
+                            </li>
+                            <li>urobiť vhodné opatrenia, aby nebola ohrozená bezpečnosť cestnej premávky na mieste
+                                dopravnej nehody,
+                            </li>
+                            <li>umožniť obnovenie cestnej premávky, najmä premávky vozidiel pravidelnej verejnej dopravy
+                                osôb,
+                            </li>
+                            <li>preukázať svoju totožnosť na požiadanie iného účastníka dopravnej nehody,</li>
+                            <li>bezodkladne upovedomiť osobu, ktorá nie je účastníkom dopravnej nehody, o hmotnej škode,
+                                ktorá jej bola spôsobená dopravnou nehodou, a oznámiť jej svoje osobné údaje; ak to nie
+                                je
+                                možné, upovedomenie a oznámenie zabezpečí prostredníctvom Policajného zboru.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>V prípade, že vodič taxislužby nie je schopný vykonať úkony podľa čl. 15 ods. 2, 3 prepravného
+                        poriadku, je cestujúci povinný urobiť podľa svojich schopností a možností všetky úkony tak, ako
+                        vodič taxislužby.
+                    </li>
+                    <li>V prípade škody, ktorá cestujúcemu vznikne pri mimoriadnej udalosti, v rámci zodpovednosti
+                        postupuje
+                        dopravca a cestujúci podľa čl. 13 a čl. 14 prepravného poriadku.
+                    </li>
+                    <li>V prípade poskytnutia pomoci cestujúceho pri mimoriadnej udalosti podľa čl. 15 ods. 4
+                        prepravného
+                        poriadku, môže dopravca poskytnúť cestujúcemu odmenu.
+                    </li>
+                </ol>
+                <div class="text-center">
+                    <b>Čl. 16</b><br>
+                    <b>Záverečné ustanovenia</b><br></div>
+                <br>
+                Tento prepravný poriadok nadobúda účinnosť dňom: &nbsp;&nbsp;&nbsp; 21.5.2020<br>
+                <br>
+                <br>
+                V Partizánskom dňa: &nbsp;&nbsp;&nbsp; 21.5.2020<br>
+                <br>
+                <br>
+                <br>
+                <div class="text-center">
+                    .......................................................<br>
+                    pečiatka a podpis dopravcu<br>
+                    <br></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary w-100 text-center" data-bs-dismiss="modal">Zavrieť
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container mt-auto py-3">
+        <span class="text-muted">Created by Gašparovič Boris © 2021</span>
+        <p>Počet návštev: <span id="count">0</span></p>
+    </div>
+</footer>
+
+</body>
+</html>

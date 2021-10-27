@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 20px;
+    color: #b1b4bd;
+    background-color: #323a45;
+}
+
+a {
+    color: #b1b4bd !important;
+    font-weight: 500 !important;
+}
+
+a:hover {
+    color: #e74c3c !important;
+}
+
+img {
+    width: 100%;
+}
+
+.header-background {
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 750px;
+    margin: 0;
+    padding-bottom: 70px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 58, 69, 0.9)));
+    background-image: linear-gradient(180deg, rgba(50, 58, 69, 0.55), rgba(50, 58, 69, 0.74)), url(images/partizanske.jpg);
+    flex-direction: column;
+    background-position: 0 0, 100% 50%;
+    background-size: auto, cover;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding: 20px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgba(12, 32, 59, 0.5) !important;
+}
+
+.navbar-brand {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: white;
+}
+
+.navbar-toggler span + span {
+    margin-top: 4px;
+    width: 22px;
+}
+
+.navbar-toggler span + span + span {
+    width: 22px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1.4rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color: #e74c3c !important;
+}
+
+.heading {
+    font-size: 3rem !important;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: white;
+    margin-top: 180px;
+    margin-bottom: 8px;
+    min-height: 100px;
+}
+
+footer {
+    background-color: #323a45;
+}
+
+.image-right {
+    min-height: 250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.9)));
+    background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.74)), url(images/Taxi.jpg);
+    background-position: center;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    -o-object-fit: cover;
+}
+
+.image-left {
+    min-height: 250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.9)));
+    background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.74)), url(images/taxxxi.jpg);
+    background-position: center;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    -o-object-fit: cover;
+}
+
+.text-left .section-title {
+    margin-top: 10px;
+    padding: 2rem 2rem 0 2rem;
+    font-size: 3.5rem;
+    color: #b1b4bd;
+    font-weight: 500;
+}
+
+.text-left .ceny {
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: 1.5rem;
+    color: #b1b4bd;
+    line-height: 1.4;
+
+}
+
+.text-right .section-title {
+    margin-top: 10px;
+    padding: 2rem 2rem 0 2rem;
+    font-size: 3.5rem;
+    color: #b1b4bd;
+    font-weight: 500;
+}
+
+.text-right .sluzby {
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1.5rem;
+    color: #b1b4bd;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.text-right-right .sluzby {
+    padding: 5rem 5rem 1rem 5rem;
+    font-size: 1.5rem;
+    color: #b1b4bd;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.tele {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white !important;
+    line-height: 1.4 !important;
+    margin-top: 180px !important;
+    margin-bottom: 8px !important;
+    min-height: 100px !important;
+    text-align: center !important;
+}
+
+
+.tele:hover {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.modal-header, .modal-body {
+    color: black;
+    line-height: 1;
+}
+
+h4 {
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px red;
+}
+
+.space {
+    height: 100px;
+    width: 0;
+    display: block;
+}
+
+.contact-us {
+    min-height: 250px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 32, 59, 0.9)));
+    background-image: linear-gradient(180deg, rgba(12, 32, 59, 0.55), rgba(12, 32, 59, 0.74)), url(images/contact-us.jpg);
+    background-position: center;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+    -o-object-fit: cover;
+}
